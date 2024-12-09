@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+}
+
+.whole-body {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 1px 1px 10px black;
+}
+
+/**********************/
+/* Heading 1 Section */
+/**********************/
+.heading1 {
+  height: 3rem;
+  background-color: black;
+  display: flex;
+}
+
+.heading1 .time {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  color: white;
+  list-style-type: none;
+  font-size: 1.2rem;
+  width: 35%;
+}
+
+.heading1 .list-items {
+  display: flex;
+  align-items: center;
+}
+
+.heading1 .list-items li {
+  list-style-type: none;
+  font-size: 1.1rem;
+  color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.heading1 .list-items li a {
+  text-decoration: none;
+  color: white;
+}
+.heading1 .list-items a:hover {
+  text-decoration: 1px solid underline;
+}
+
+.heading1 .list-items li .color-box {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+}
+
+/**********************/
+/* Heading 2 Section */
+/**********************/
+.heading2 {
+  height: 11rem;
+  background-color: rgb(213, 240, 250);
+}
+
+.heading2 .img-section {
+  height: 10rem;
+  background-image: url("Images/dspmu_big_logo.png");
+  background-repeat: no-repeat;
+  background-size: 45rem;
+  margin-left: 2rem;
+}
+
+/**********************/
+/* Heading 3 Section */
+/**********************/
+.heading3 {
+  height: 3.5rem;
+  background-color: #103965;
+  display: flex;
+}
+.heading3 .button-section {
+  align-items: center;
+}
+.heading3 .button-section button {
+  background-color: #103965;
+  border-left: 0.5px solid white;
+  height: 3.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.heading3 .button-section button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.heading3 .button-section button:hover {
+  background-color: black;
+}
+
+/* Hidden List Section (Drop Down) */
+.heading3 .button-section button .hidden_list {
+  display: none;
+}
+.heading3 .button-section button:hover .hidden_list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  top: 17.5rem;
+  background-color: #103965;
+}
+.heading3 .button-section button .hidden_list li {
+  list-style-type: none;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  border: 0.1rem solid #cecece;
+}
+.heading3 .button-section button .hidden_list > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.35rem;
+}
+.heading3 .button-section button .hidden_list li a:hover {
+  color: turquoise;
+}
+
+/* Hidden List 1 Section (About us)  */
+.heading3 .button-section button:hover .hidden_list1 {
+  width: 15rem;
+  left: 15.6%;
+}
+
+/*** Hidden List 2 Section (Administration) ***/
+.heading3 .button-section button:hover .hidden_list2 {
+  width: 30rem;
+  left: 22.2%;
+}
+/* Training & Placement Cell */
+.TandPcell {
+  display: none;
+}
+.hidden_list2 li:hover .TandPcell {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 61.58%;
+  left: 100%;
+  width: 25rem;
+  z-index: 2;
+  background-color: #103965;
+}
+
+/*** Hidden List 3 Section (Departments) ***/
+.heading3 .button-section button:hover .hidden_list3 {
+  width: 20rem;
+  left: 31.5%;
+}
+/* Making all sub-department section display:none and add some properties*/
+.hidden_list3 .departments {
+  display: none;
+}
+.hidden_list3 li:hover .departments {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 100%;
+  width: 20rem;
+  z-index: 2;
+  background-color: #103965;
+}
+/* Ph.D Section */
+.hidden_list3 .phd {
+  top: 0%;
+}
+/* Humanities Section */
+.hidden_list3 .humanities {
+  top: 12.5%;
+}
+/* Science Section */
+.hidden_list3 .science {
+  top: 25%;
+}
+/* Social Science Section */
+.hidden_list3 .social {
+  top: 37.5%;
+}
+/* Vocational Section */
+.hidden_list3 .vocational {
+  top: 50%;
+}
+/* Certificate Section */
+.hidden_list3 .certificate {
+  top: 62.5%;
+}
+/* Diploma Section */
+.hidden_list3 .diploma {
+  top: 75%;
+}
+
+/*** Hidden List 4 Section (Facilities) ***/
+.heading3 .button-section button:hover .hidden_list4 {
+  width: 15rem;
+  left: 40%;
+}
+/* Library Section */
+.hidden_list4 .library {
+  display: none;
+}
+.hidden_list4 li:hover .library {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 100%;
+  top: 0%;
+  width: 20rem;
+  z-index: 2;
+  background-color: #103965;
+}
+
+/* Hidden List 5 Section (Alumni) */
+.heading3 .button-section button:hover .hidden_list5 {
+  width: 15rem;
+  left: 46.5%;
+}
+
+/* Hidden List 6 Section (Student Corner) */
+.heading3 .button-section button:hover .hidden_list6 {
+  width: 25rem;
+  left: 52.1%;
+}
+
+/* Hidden List 7 Section (Research) */
+.heading3 .button-section button:hover .hidden_list7 {
+  width: 12rem;
+  left: 61.6%;
+}
+
+/*** Line Before Main ***/
+.first {
+  height: 4rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #cecece6e;
+}
+.first li {
+  list-style-type: none;
+  font-size: 1.35rem;
+  margin-right: 1rem;
+}
+.first li a {
+  text-decoration: none;
+  color: rgb(62, 114, 134);
+}
+.first li a:hover {
+  text-decoration: underline;
+}
+
+/**********************/
+/*    Main Section    */
+/**********************/
+
+/*** Blue Heading ***/
+main .blue-bg {
+  background-color: rgb(8, 98, 162);
+  height: 3rem;
+}
+main .blue-bg li {
+  list-style-type: none;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+main .blue-bg a {
+  color: azure;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* Table Section */
+main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+main table tr {
+  font-size: 1.3rem;
+}
+main table tr th {
+  border: 1px solid black;
+  height: 4rem;
+}
+main table tr td {
+  border: 1px solid black;
+  font-size: 1.3rem;
+  text-align: center;
+}
+main table tr .tender-blue {
+  text-align: left;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+main table tr .tender-blue a {
+  text-decoration: none;
+  color: #1967ac;
+}
+main table tr .tender-blue a:hover {
+  color: #08365e;
+  text-decoration: underline;
+}
+
+/********************************************/
+/*                Footer Section           */
+/*******************************************/
+footer {
+  height: 23rem;
+  background-color: #0b304f;
+  display: flex;
+  justify-content: center;
+}
+footer .black-bg {
+  height: 3rem;
+  background-color: black;
+}
+footer p {
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+footer li {
+  list-style-type: none;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  line-height: 2;
+  color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer #link {
+  width: 30rem;
+}
+footer .social_media {
+  line-height: 2;
+  letter-spacing: 1rem;
+  font-size: 2rem;
+}
+footer .social_media i {
+  opacity: 0.8;
+}
+footer .social_media a:hover i {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Designed By Inzi */
+.designed-by {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+.designed-by p {
+  font-size: 2rem;
+}
+.designed-by a {
+  color: #219ebc;
+  font-weight: 600;
+  text-decoration: none;
+}
+.designed-by .inzi-img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 3px solid #219ebc;
+  margin-left: 1rem;
+}
+.designed-by img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+.designed-by .inzi-img:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}

@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("Images/webmail_bgimage.jpeg");
+  background-size: cover;
+}
+
+/*************************/
+/*** Main Box Section ****/
+/*************************/
+.main-box {
+  background-color: white;
+  width: 45%;
+  height: 45%;
+  position: relative;
+  top: 25%;
+  left: 25%;
+  display: flex;
+}
+
+/* Box-Image Section */
+.main-box .mail-image {
+  width: 33%;
+  height: 90%;
+  position: relative;
+  background-image: url("Images/webmail_login_logo.jpg");
+  background-size: cover;
+  top: 5%;
+  margin-left: 2.5%;
+}
+
+/* Input Field Section */
+.main-box .input-fields {
+  width: 67%;
+  height: 90%;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+}
+
+.main-box .input-fields p {
+  font-size: 1.75rem;
+}
+
+.main-box .input-fields hr {
+  width: 95%;
+}
+
+.main-box .input-fields .input {
+  margin-top: 5%;
+}
+
+.main-box .input-fields .input input {
+  width: 95%;
+  height: 2.5rem;
+  margin-bottom: 2%;
+  background-color: whitesmoke;
+  outline: none;
+  border: 1px solid;
+}
+
+.main-box .input-fields .input input:focus {
+  border-color: rgb(6, 121, 167);
+  background-color: white;
+}
+
+.main-box .input-fields .select {
+  margin-top: 10%;
+}
+
+.main-box .input-fields .select div label {
+  font-size: 1.3rem;
+  margin-right: 34%;
+}
+
+.main-box .input-fields .select select {
+  width: 45%;
+  height: 2.5rem;
+  background-color: whitesmoke;
+}
+
+.main-box .input-fields .select select {
+  opacity: 70%;
+}
+
+.main-box .input-fields .select select:focus {
+  border-color: rgb(6, 121, 167);
+  background-color: white;
+}
+
+.main-box .input-fields .select .skin-select {
+  margin-left: 5%;
+}
+
+.main-box .input-fields .check {
+  margin-top: 5%;
+}
+
+.main-box .input-fields .check #yes {
+  margin-right: 0.5rem;
+  position: relative;
+  top: 0.15rem;
+}
+
+.main-box .input-fields .check label {
+  font-size: 1.3rem;
+}
+
+.main-box .input-fields .buttons {
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+.main-box .input-fields .buttons button {
+  width: 25%;
+  height: 3rem;
+  margin-right: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.main-box .input-fields .buttons #login {
+  background-color: #066b9a;
+  border: 2px solid navy;
+  color: white;
+}
+.main-box .input-fields .buttons #login:hover {
+  background-color: rgb(42, 145, 186);
+}
+
+.main-box .input-fields .buttons #reset {
+  background-color: #a9d3e662;
+  border: 2px solid black;
+  color: navy;
+}
+.main-box .input-fields .buttons #reset:hover {
+  border: 2px solid rgb(6, 121, 167);
+  background-color: white;
+}
+
+.main-box .input-fields .home {
+  margin-left: 77%;
+  margin-top: 2%;
+}
+.main-box .input-fields .home a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: navy;
+}
+.main-box .input-fields .home a:hover {
+  text-decoration: underline;
+  color: red;
+}

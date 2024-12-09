@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="webmail.css" />
+    <link rel="icon" href="Images/webmail_favicon.ico" />
+    <title>Web Mail Page</title>
+  </head>
+  <body>
+    <div class="main-box">
+      <!-- Image -->
+      <div class="mail-image"></div>
+
+      <!-- Form -->
+      <form class="input-fields" action="https://www.google.com/">
+        <p>Sign In</p>
+        <hr />
+
+        <div class="input">
+          <input type="text" placeholder="   Username" name="Username" />
+          <input type="password" placeholder="   Password" name="Password" />
+        </div>
+
+        <div class="select">
+          <div>
+            <label for="lang">Language:</label> <label for="skin">Skin:</label>
+          </div>
+          <select class="lang-select" id="lang" name="language">
+            <option value="Arabic">Arabic</option>
+            <option value="Bulgarian">Bulgarian</option>
+            <option value="Bengali">Bengali</option>
+            <option value="Danish">Danish</option>
+            <option value="German">German</option>
+            <option value="Greek">Greek</option>
+            <option value="English" selected>English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Spanish">Spanish</option>
+            <option value="French">French</option>
+            <option value="Hungarian">Hungarian</option>
+            <option value="Italian">Italian</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Dutch">Dutch</option>
+            <option value="Polish">Polish</option>
+            <option value="European">Portuguese (European)</option>
+            <option value="Brazilian">Portuguese (Brazilian)</option>
+            <option value="Russian">Russian</option>
+            <option value="Slovak">Slovak</option>
+            <option value="Thai">Thai</option>
+            <option value="Turkish">Turkish</option>
+            <option value="Chinese">Chinese</option>
+          </select>
+          <select class="skin-select" id="skin" name="skin">
+            <option value="Arctic">Arctic</option>
+            <option value="Default" selected>Default</option>
+            <option value="Mondo">Mondo</option>
+            <option value="Oceano">Oceano</option>
+            <option value="Pacific">Pacific</option>
+          </select>
+        </div>
+
+        <div class="check">
+          <input type="checkbox" id="yes" name="tandc" value="yes" />
+          <label for="yes"> Remember my settings for this computer</label>
+        </div>
+
+        <div class="buttons">
+          <button type="submit" id="login">Login</button>
+          <button type="reset" id="reset">Reset</button>
+        </div>
+
+        <div class="home">
+          <a href="index.html">Go Home <i class="fa-solid fa-home"></i></a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
